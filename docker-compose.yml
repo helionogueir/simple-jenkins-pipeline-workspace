@@ -1,0 +1,15 @@
+version: '2.2'
+services:
+  JenkinsWorkspace:
+    cpus: 1
+    user: root
+    mem_limit: 768M
+    image: jenkinsci/blueocean
+    container_name: JenkinsWorkspace
+    volumes: 
+      - ./data/.ssh:/root/.ssh
+      - ./data/src:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8080:8080
+      - 50000:50000
