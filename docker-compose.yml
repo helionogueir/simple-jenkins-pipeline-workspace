@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   JenkinsWorkspace:
-    cpus: 1
+    cpus: 2
     user: root
     mem_limit: 768M
     image: jenkinsci/blueocean
