@@ -1,4 +1,7 @@
 version: '2.2'
+networks:
+  JenkinsWorkspace:
+    driver: bridge
 services:
   JenkinsWorkspace:
     cpus: 2
@@ -6,6 +9,8 @@ services:
     mem_limit: 768M
     image: jenkinsci/blueocean
     container_name: JenkinsWorkspace
+    networks:
+      - JenkinsWorkspace
     volumes: 
       - ./data/.ssh:/root/.ssh
       - ./data/src:/var/jenkins_home
