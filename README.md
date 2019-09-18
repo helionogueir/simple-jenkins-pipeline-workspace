@@ -63,3 +63,5 @@ Click in ***Start using Jenkins*** button.
 Great! Jenkins is installed and ready.
 
 ![Welcome to Jenkins](.image/step-6-4.png)
+
+Now access [http://localhost:8088/](http://localhost:8088/) in your browser.
