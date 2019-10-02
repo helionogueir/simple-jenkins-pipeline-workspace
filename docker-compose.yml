@@ -4,9 +4,9 @@ networks:
     driver: bridge
 services:
   JenkinsWorkspace:
-    cpus: 2
+    cpus: 1
     user: root
-    mem_limit: 768M
+    mem_limit: 768m
     image: jenkinsci/blueocean
     container_name: JenkinsWorkspace
     networks:
